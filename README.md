@@ -4,15 +4,61 @@ Portable pre-review instructions for English economics papers.
 
 This repository provides a multi-IDE reviewer skill for economics papers. It supports Codex, Claude Code, Cursor, and other agent IDEs through thin adapters, while keeping one canonical review protocol in `references/`.
 
-## Quick Start
+## Start Here
 
-Clone or download this repository, then open it from the IDE or agent environment you use for paper review.
+You only need three things:
+
+1. This repository.
+2. Your English economics paper, draft, PDF, TeX folder, or excerpt.
+3. An AI coding or agent IDE such as Codex, Claude Code, Cursor, or another tool that can read repository instructions.
+
+Then say:
 
 ```text
 Review this economics paper using the economics-paper-reviewer protocol.
 ```
 
-If your agent can install local skills, use this repository root as the skill folder. The required Codex entry file is `SKILL.md`.
+The reviewer will classify the paper, load the right economics lens, run a six-role panel, and tell you which claims are verified, provisional, fatal, or fixable.
+
+## Easiest Install Options
+
+### Option A: Download ZIP
+
+Use this if you do not like Git.
+
+1. Click `Code` on GitHub.
+2. Click `Download ZIP`.
+3. Unzip the folder.
+4. Put the folder next to your paper project or inside your agent skills folder.
+5. Open your paper project in your AI IDE.
+6. Ask the agent to review your paper using this repository's instructions.
+
+### Option B: Git Clone
+
+Use this if you are comfortable with Git:
+
+```powershell
+git clone https://github.com/viplee110/economics-paper-reviewer.git
+```
+
+Then open either your paper project or this reviewer folder in your AI IDE.
+
+## What To Give The Reviewer
+
+Best:
+
+- the full paper PDF
+- the TeX source folder
+- appendix, tables, figures, and code notes when relevant
+- target journal or venue if you have one
+
+Still useful:
+
+- title, abstract, introduction, model or empirical design section
+- a working-paper excerpt
+- a referee response draft
+
+If evidence is missing, the reviewer must mark the corresponding judgment as provisional.
 
 ## What It Does
 
@@ -38,6 +84,15 @@ Install or copy this repository as a Codex skill folder, then ask:
 Use the economics-paper-reviewer skill to review this paper.
 ```
 
+Simple local install paths:
+
+```text
+Windows: C:\Users\<you>\.codex\skills\economics-paper-reviewer
+macOS/Linux: ~/.codex/skills/economics-paper-reviewer
+```
+
+If you do not install it as a skill, you can still clone or download this repository and ask Codex to use the `SKILL.md` file in this folder.
+
 ## Use With Claude Code
 
 Clone this repository into or next to your paper project. Claude Code can read `CLAUDE.md`.
@@ -55,6 +110,22 @@ Use `AGENTS.md` as the generic entry point, or ask:
 ```text
 Review this economics paper using the repository reviewer instructions.
 ```
+
+If the IDE asks which instruction file to use, choose `AGENTS.md`.
+
+## Plain-English Workflow
+
+The reviewer follows this order:
+
+1. Identify the paper type.
+2. Check the contribution claim.
+3. Check the closest literature and evidence status.
+4. Run six separate referee roles.
+5. Separate fatal risks from fixable risks.
+6. Diagnose paper structure and target fit.
+7. Give prioritized revision steps.
+
+The output is a pre-review report, not a final editorial decision.
 
 ## Repository Layout
 
@@ -74,4 +145,4 @@ The `eval/` folder contains a lightweight benchmark scaffold with toy cases only
 
 ## License
 
-Apache-2.0.
+MIT.
