@@ -1,0 +1,8 @@
+interface:
+  display_name: "Economics Paper Reviewer"
+  short_description: "Pre-review English economics papers with a six-role panel."
+  brand_color: "#1F4E79"
+  default_prompt: "Use $economics-paper-reviewer to review this English economics paper."
+
+policy:
+  allow_implicit_invocation: true

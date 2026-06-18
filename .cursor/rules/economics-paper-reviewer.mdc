@@ -1,0 +1,8 @@
+---
+description: Use the economics-paper-reviewer protocol for English economics paper pre-review.
+alwaysApply: false
+---
+
+When reviewing an English economics paper, read `AGENTS.md` and `SKILL.md`, then use the canonical protocol in `references/`.
+
+Do not duplicate the protocol here. Keep review outputs evidence-grounded and mark missing evidence as provisional.

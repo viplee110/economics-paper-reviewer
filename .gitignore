@@ -1,0 +1,12 @@
+# Local outputs
+review_outputs/
+tmp/
+.cache/
+__pycache__/
+*.pyc
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
