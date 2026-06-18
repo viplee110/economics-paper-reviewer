@@ -1,6 +1,6 @@
 ---
 name: economics-paper-reviewer
-description: Review English economics papers as a portable pre-review skill. Use for theory, empirical causal, structural or IO empirical, econometrics or methodology, experimental or behavioral, computational or simulation, survey or literature review, and mixed economics papers. Produces evidence-grounded six-role referee reports, fatal/fixable risks, target-fit diagnosis, manuscript architecture diagnosis, and revision priorities.
+description: Review English economics papers as a portable pre-review skill. Use for theory, empirical causal, structural or IO empirical, econometrics or methodology, experimental or behavioral, computational or simulation, survey or literature review, and mixed economics papers. Also use for benchmark or validity testing of economics paper reviews. Produces evidence-grounded six-role referee reports, fatal/fixable risks, target-fit diagnosis, manuscript architecture diagnosis, false-fatal audit, and revision priorities.
 ---
 
 # Economics Paper Reviewer
@@ -15,6 +15,7 @@ Run one canonical review protocol across all IDEs:
 2. Classify paper type: theory, empirical causal, structural, econometrics, experimental, computational, survey or literature review, or mixed.
 3. Build literature grounding when search tools or user-provided papers are available.
 4. Load `references/review_pipeline.md`, `references/panel_protocol.md`, `references/evidence_grounding.md`, and the paper-type lens files needed for the classified paper.
+   - If the user asks for benchmark, validation, or reviewer testing, also load `references/benchmark_mode.md`.
 5. Run the six-role economics review panel.
 6. Produce the report using `references/report_template.md`.
 
@@ -45,8 +46,10 @@ The review must be in English and include:
 - target or venue calibration
 - contribution summary
 - six-role panel reports
+- must-not-miss risks
 - fatal risks
 - fixable risks
+- false-fatal audit
 - literature and evidence status
 - manuscript architecture diagnosis
 - recommendation range

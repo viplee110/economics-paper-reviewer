@@ -67,6 +67,7 @@ If evidence is missing, the reviewer must mark the corresponding judgment as pro
 - Runs a six-role economics review panel.
 - Grounds review claims in economics literature when tools are available.
 - Separates fatal risks from fixable risks.
+- Runs a false-fatal audit so severe criticisms do not mechanically reject papers with real economic value.
 - Produces target-fit, manuscript architecture, evidence-status, and revision-priority diagnoses.
 
 ## What It Does Not Do
@@ -120,10 +121,12 @@ The reviewer follows this order:
 1. Identify the paper type.
 2. Check the contribution claim.
 3. Check the closest literature and evidence status.
-4. Run six separate referee roles.
-5. Separate fatal risks from fixable risks.
-6. Diagnose paper structure and target fit.
-7. Give prioritized revision steps.
+4. List must-not-miss risks.
+5. Run six separate referee roles.
+6. Separate fatal risks from fixable risks.
+7. Audit false-fatal criticisms and best-case defenses.
+8. Diagnose paper structure and target fit.
+9. Give prioritized revision steps.
 
 The output is a pre-review report, not a final editorial decision.
 
@@ -143,6 +146,12 @@ eval/
 ## Evaluation
 
 The `eval/` folder contains a lightweight benchmark scaffold with toy cases only. It is not a Hugging Face dataset and does not contain copyrighted papers. See `EVALUATION.md` for the evaluation strategy and the boundary between pipeline tests and economics-validity tests.
+
+For validation or benchmark tasks, ask:
+
+```text
+Benchmark this reviewer on this economics paper.
+```
 
 ## License
 

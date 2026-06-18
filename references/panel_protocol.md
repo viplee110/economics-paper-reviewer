@@ -56,6 +56,8 @@ Focus:
 
 This referee must not reject merely because a paper is non-mainstream. It must first ask whether the paper has a real primitive, identification, data, theorem, mechanism, or empirical insight.
 
+This referee must also avoid false fatal criticism. A severe criticism is allowed only after asking whether an appendix, proof, data construction, robustness section, or best-case interpretation could overturn the criticism.
+
 ## Referee 6: Advocate / Best-Case Reader
 
 Focus:
@@ -67,6 +69,14 @@ Focus:
 
 This role prevents over-conservative review drift.
 
+For every severe or fatal criticism, this referee must run a false-fatal audit:
+
+- What is the strongest version of the paper's contribution?
+- What evidence would make the criticism nonfatal?
+- Is the paper descriptive but important?
+- Does the documented fact change a model, policy calculation, field prior, or research agenda?
+- Which criticisms are taste or positioning concerns rather than fatal validity problems?
+
 ## Synthesis
 
 After six reports, produce:
@@ -74,7 +84,9 @@ After six reports, produce:
 - consensus
 - disagreements
 - fatal risks
+- false-fatal risks
 - fixable risks
+- evidence that would change the decision
 - evidence gaps
 - revision priorities
 - recommendation range

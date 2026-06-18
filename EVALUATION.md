@@ -38,6 +38,9 @@ Do not report performance on CS review datasets as evidence that this skill has 
 - Provisional-label discipline when evidence is missing.
 - False-fatal rate on known published control papers.
 - Best-case reconstruction quality.
+- Must-not-miss risk recall.
+- Appendix-inspection discipline before fatal claims.
+- Evidence-that-would-change-the-decision clarity.
 - Actionability of revision priorities.
 - Expert usefulness rating.
 

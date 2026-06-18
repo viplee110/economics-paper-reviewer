@@ -41,6 +41,8 @@ If search tools are unavailable, state which judgments are provisional.
 
 Run the six-role panel in `panel_protocol.md`.
 
+Before narrative review, write a short `must_not_miss_risks` list. These are the few risks that, if missed, would make the review professionally unreliable.
+
 The panel should distinguish:
 
 - weak idea
@@ -51,8 +53,18 @@ The panel should distinguish:
 - weak exposition
 - missing evidence
 
+## Appendix And Supplement Inspection
+
+Before labeling a risk fatal, inspect the appendix, proof appendix, online appendix, data appendix, code notes, or supplemental materials if they are available. If the relevant appendix is unavailable, mark the fatal-risk claim as provisional and state which evidence could overturn it.
+
+## Descriptive But Important Papers
+
+Do not reject a paper merely because it documents a phenomenon rather than proving a theorem or identifying a clean treatment effect. First ask whether the documented fact changes a model, policy calculation, measurement practice, field prior, or research agenda. If it does, review the paper on documentation credibility, mechanism interpretation, and implications.
+
 ## Output
 
 Use `report_template.md`.
 
 Do not collapse the review to a single score. If a score is requested, provide it only after the written diagnosis and explain its uncertainty.
+
+If the user requests benchmark, validation, or reviewer testing, also use `benchmark_mode.md`.
