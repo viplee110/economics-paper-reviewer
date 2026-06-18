@@ -41,6 +41,7 @@ Choose the focus by paper type:
 - econometrics: assumptions, theorem scope, simulations, examples
 - experimental: design, randomization, power, mechanisms, inference
 - computational: code reproducibility, calibration, algorithms, numerical stability
+- survey or literature review: coverage, synthesis framework, evidence grading, balance, agenda value
 
 ## Referee 5: Scientific Judge / Idea Critic
 

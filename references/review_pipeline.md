@@ -28,6 +28,7 @@ Classify the paper before reviewing. Use one or more lenses:
 - econometrics or methodology: use `econometrics_review.md`
 - experimental or behavioral: use `experimental_review.md`
 - computational or simulation: use `computational_review.md`
+- survey or literature review: use `survey_review.md`
 - mixed: load every relevant lens and state the dominant review risk
 
 ## Grounding

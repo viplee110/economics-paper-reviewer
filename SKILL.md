@@ -1,6 +1,6 @@
 ---
 name: economics-paper-reviewer
-description: Review English economics papers as a portable pre-review skill. Use for theory, empirical causal, structural or IO empirical, econometrics or methodology, experimental or behavioral, computational or simulation, and mixed economics papers. Produces evidence-grounded six-role referee reports, fatal/fixable risks, target-fit diagnosis, manuscript architecture diagnosis, and revision priorities.
+description: Review English economics papers as a portable pre-review skill. Use for theory, empirical causal, structural or IO empirical, econometrics or methodology, experimental or behavioral, computational or simulation, survey or literature review, and mixed economics papers. Produces evidence-grounded six-role referee reports, fatal/fixable risks, target-fit diagnosis, manuscript architecture diagnosis, and revision priorities.
 ---
 
 # Economics Paper Reviewer
@@ -12,7 +12,7 @@ Use this skill to pre-review an English economics paper. It is an advisory revie
 Run one canonical review protocol across all IDEs:
 
 1. Intake the manuscript, PDF, TeX, or supplied excerpt.
-2. Classify paper type: theory, empirical causal, structural, econometrics, experimental, computational, or mixed.
+2. Classify paper type: theory, empirical causal, structural, econometrics, experimental, computational, survey or literature review, or mixed.
 3. Build literature grounding when search tools or user-provided papers are available.
 4. Load `references/review_pipeline.md`, `references/panel_protocol.md`, `references/evidence_grounding.md`, and the paper-type lens files needed for the classified paper.
 5. Run the six-role economics review panel.

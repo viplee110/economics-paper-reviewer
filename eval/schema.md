@@ -38,3 +38,5 @@ Evidence labels expected:
 ```
 
 Do not include copyrighted paper text unless permission is clear. Toy cases are preferred for v1.
+
+Supported v1 paper types include theory, empirical causal, structural, econometrics, experimental, computational, survey or literature review, and mixed papers.

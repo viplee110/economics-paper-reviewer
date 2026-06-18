@@ -7,6 +7,7 @@ Use this rubric to judge a reviewer output.
 - Correctly identifies the paper type.
 - Loads the right review lens.
 - Uses multiple lenses for mixed papers.
+- Does not force survey or literature review papers into theorem, identification, or original-result lenses.
 
 ## Evidence Discipline
 

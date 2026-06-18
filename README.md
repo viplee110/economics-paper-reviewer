@@ -63,7 +63,7 @@ If evidence is missing, the reviewer must mark the corresponding judgment as pro
 ## What It Does
 
 - Reviews English economics papers before submission or revision.
-- Classifies the paper as theory, empirical causal, structural, econometrics, experimental, computational, or mixed.
+- Classifies the paper as theory, empirical causal, structural, econometrics, experimental, computational, survey or literature review, or mixed.
 - Runs a six-role economics review panel.
 - Grounds review claims in economics literature when tools are available.
 - Separates fatal risks from fixable risks.
@@ -133,6 +133,7 @@ The output is a pre-review report, not a final editorial decision.
 SKILL.md
 CLAUDE.md
 AGENTS.md
+EVALUATION.md
 references/
 eval/
 .claude/commands/
@@ -141,7 +142,7 @@ eval/
 
 ## Evaluation
 
-The `eval/` folder contains a lightweight benchmark scaffold with toy cases only. It is not a Hugging Face dataset and does not contain copyrighted papers.
+The `eval/` folder contains a lightweight benchmark scaffold with toy cases only. It is not a Hugging Face dataset and does not contain copyrighted papers. See `EVALUATION.md` for the evaluation strategy and the boundary between pipeline tests and economics-validity tests.
 
 ## License
 
