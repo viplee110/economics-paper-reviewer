@@ -16,6 +16,7 @@ Run one canonical review protocol across all IDEs:
 3. Build literature grounding when search tools or user-provided papers are available.
 4. Load `references/review_pipeline.md`, `references/panel_protocol.md`, `references/evidence_grounding.md`, and the paper-type lens files needed for the classified paper.
    - If the user asks for benchmark, validation, or reviewer testing, also load `references/benchmark_mode.md`.
+   - If the user asks for scores, comparison with human reviewers, or calibration, also load `references/scorecard.md`.
 5. Run the six-role economics review panel.
 6. Produce the report using `references/report_template.md`.
 
@@ -52,6 +53,7 @@ The review must be in English and include:
 - false-fatal audit
 - literature and evidence status
 - manuscript architecture diagnosis
+- reviewer scorecard when scores, benchmarking, or calibration are requested
 - recommendation range
 - revision priorities
 

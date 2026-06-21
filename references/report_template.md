@@ -71,6 +71,29 @@ For each fatal risk, state:
 
 List issues that can be repaired without changing the central contribution.
 
+## Reviewer Scorecard
+
+Use this section when scores, benchmarking, validation, or calibration are requested. Follow `scorecard.md`.
+
+```text
+originality:
+importance:
+claim_support:
+technical_soundness:
+literature_grounding:
+evidence_strength:
+reproducibility_transparency:
+writing_clarity:
+community_value:
+fatal_risk_severity:
+raw_overall_score:
+acceptance_likelihood_score:
+score_uncertainty:
+provisional_score_fields:
+```
+
+Explain any dimension that is unusually high, unusually low, or provisional. Do not let the scorecard replace the written diagnosis.
+
 ## Recommendation Range
 
 Use a range, not a fake precise verdict:

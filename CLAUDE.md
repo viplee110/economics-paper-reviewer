@@ -15,6 +15,7 @@ Required behavior:
 - Review English economics papers only.
 - Classify the paper type before choosing a review lens.
 - If the task is benchmark, validation, or reviewer-quality testing, load `references/benchmark_mode.md`.
+- If the task asks for scores, calibration, or comparison with human reviewers, load `references/scorecard.md`.
 - Use the six-role economics review panel.
 - Use economics-specific literature grounding when tools are available.
 - Mark unverified literature, data, method, theorem, style, and structure claims as provisional.

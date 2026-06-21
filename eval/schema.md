@@ -34,6 +34,7 @@ Must-not-miss fatal risks:
 Fixable risks:
 Wrong criticisms:
 Expected recommendation range:
+Expected scorecard flags:
 Evidence labels expected:
 ```
 

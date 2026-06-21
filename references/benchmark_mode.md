@@ -7,11 +7,12 @@ Use this file when the user asks to test, validate, benchmark, compare, or evalu
 1. Hide final-version evidence from the reviewing pass when possible.
 2. Read the early paper or supplied excerpt.
 3. Classify the paper type and load the correct lens files.
-4. Produce `must_not_miss_risks` before writing narrative prose.
-5. Run the six-role panel.
-6. For every severe criticism, run a false-fatal audit.
-7. State what evidence would change the recommendation.
-8. Only after the blind review, compare with final-version changes, public referee files, or human benchmark labels.
+4. Load `scorecard.md` if the benchmark requires numeric comparison with human reviewers.
+5. Produce `must_not_miss_risks` before writing narrative prose.
+6. Run the six-role panel.
+7. For every severe criticism, run a false-fatal audit.
+8. State what evidence would change the recommendation.
+9. Only after the blind review, compare with final-version changes, public referee files, or human benchmark labels.
 
 ## Benchmark Output Schema
 
@@ -28,11 +29,27 @@ false_fatal_audit:
 evidence_needed_to_change_decision:
 appendix_or_supplement_checked:
 provisional_claims:
+scorecard:
+  originality:
+  importance:
+  claim_support:
+  technical_soundness:
+  literature_grounding:
+  evidence_strength:
+  reproducibility_transparency:
+  writing_clarity:
+  community_value:
+  fatal_risk_severity:
+  raw_overall_score:
+  acceptance_likelihood_score:
+  score_uncertainty:
 final_version_alignment:
 missed_risks:
 false_fatal_criticisms:
 professional_validity_score:
 ```
+
+For Ng-style tests, keep this blind benchmark output fixed before opening human labels. Use the scorecard dimensions as calibration features. Train any linear regression or other calibrator only on the training split and report test-set performance separately from raw skill performance.
 
 ## False-Fatal Guardrail
 

@@ -21,6 +21,7 @@ Use this rubric to judge a reviewer output.
 - Finds must-not-miss fatal risks.
 - Separates fatal and fixable issues.
 - Gives actionable revision priorities.
+- Uses the stable scorecard dimensions when scores or benchmark comparison are requested.
 - Includes the Advocate / Best-Case Reader view.
 - Includes a false-fatal audit for severe criticisms.
 - Does not reject descriptive-but-important papers merely because they are not clean causal, structural, or theorem papers.

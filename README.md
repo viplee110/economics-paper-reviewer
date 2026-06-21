@@ -20,6 +20,8 @@ Review this economics paper using the economics-paper-reviewer protocol.
 
 The reviewer will classify the paper, load the right economics lens, run a six-role panel, and tell you which claims are verified, provisional, fatal, or fixable.
 
+If you ask for scores or benchmarking, it also produces a stable multidimensional scorecard that can be calibrated against human reviewer ratings.
+
 ## Easiest Install Options
 
 ### Option A: Download ZIP
@@ -69,6 +71,7 @@ If evidence is missing, the reviewer must mark the corresponding judgment as pro
 - Separates fatal risks from fixable risks.
 - Runs a false-fatal audit so severe criticisms do not mechanically reject papers with real economic value.
 - Produces target-fit, manuscript architecture, evidence-status, and revision-priority diagnoses.
+- Produces a multidimensional reviewer scorecard for benchmark and calibration tasks.
 
 ## What It Does Not Do
 
@@ -126,7 +129,8 @@ The reviewer follows this order:
 6. Separate fatal risks from fixable risks.
 7. Audit false-fatal criticisms and best-case defenses.
 8. Diagnose paper structure and target fit.
-9. Give prioritized revision steps.
+9. Add a scorecard if scores or benchmarks are requested.
+10. Give prioritized revision steps.
 
 The output is a pre-review report, not a final editorial decision.
 
@@ -152,6 +156,8 @@ For validation or benchmark tasks, ask:
 ```text
 Benchmark this reviewer on this economics paper.
 ```
+
+For Ng-style human-correlation tests, use the scorecard dimensions as calibration features. Keep raw skill performance and calibrated test-set performance separate.
 
 ## License
 

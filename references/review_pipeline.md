@@ -37,6 +37,10 @@ Use `evidence_grounding.md` before making serious novelty, contribution, target-
 
 If search tools are unavailable, state which judgments are provisional.
 
+## Scorecard
+
+Use `scorecard.md` when the user asks for scores, benchmarking, validation, comparison with human reviewers, or Ng-style calibration. The scorecard is a calibration layer, not a substitute for the written review.
+
 ## Review
 
 Run the six-role panel in `panel_protocol.md`.
@@ -65,6 +69,6 @@ Do not reject a paper merely because it documents a phenomenon rather than provi
 
 Use `report_template.md`.
 
-Do not collapse the review to a single score. If a score is requested, provide it only after the written diagnosis and explain its uncertainty.
+Do not collapse the review to a single score. If scores are requested, provide the multidimensional scorecard only after the written diagnosis and explain its uncertainty.
 
 If the user requests benchmark, validation, or reviewer testing, also use `benchmark_mode.md`.

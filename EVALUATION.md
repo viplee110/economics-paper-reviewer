@@ -33,6 +33,9 @@ Do not report performance on CS review datasets as evidence that this skill has 
 ## Suggested Metrics
 
 - Paper-type routing accuracy.
+- Raw reviewer-score correlation with human ratings.
+- Calibrated score correlation with human ratings on a held-out test split.
+- Acceptance or revise-and-resubmit AUC when valid human outcome labels exist.
 - Must-not-miss risk recall.
 - Hallucination rate for citations, data, proofs, methods, and results.
 - Provisional-label discipline when evidence is missing.
@@ -43,6 +46,18 @@ Do not report performance on CS review datasets as evidence that this skill has 
 - Evidence-that-would-change-the-decision clarity.
 - Actionability of revision priorities.
 - Expert usefulness rating.
+
+## Ng-Style Calibration Tests
+
+For comparison with agentic reviewer systems that train a simple calibration model, use a split-sample design:
+
+1. Produce blind reviews and scorecards for every paper before opening human labels.
+2. Split the benchmark into a training set and a held-out test set before fitting any calibrator.
+3. Train a simple model, such as linear regression, using the scorecard dimensions as features and human mean reviewer ratings as the target.
+4. Report raw skill performance and calibrated test-set performance separately.
+5. Do not tune prompts, score definitions, or model weights on the held-out test set.
+
+The committed scorecard dimensions live in `references/scorecard.md` so benchmark features stay stable across IDEs.
 
 ## What Not To Claim
 

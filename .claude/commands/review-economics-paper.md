@@ -8,6 +8,7 @@ Steps:
 2. Read `SKILL.md`.
 3. Load `references/review_pipeline.md`, `references/panel_protocol.md`, and `references/evidence_grounding.md`.
 4. Classify the paper type and load the matching lens files.
-5. Produce the structured pre-review report using `references/report_template.md`.
+5. If scores, benchmarking, validation, or human-reviewer comparison are requested, also load `references/benchmark_mode.md` and `references/scorecard.md`.
+6. Produce the structured pre-review report using `references/report_template.md`.
 
 Do not claim final editorial authority. Mark missing evidence as provisional.

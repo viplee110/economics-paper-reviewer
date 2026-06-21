@@ -5,4 +5,6 @@ alwaysApply: false
 
 When reviewing an English economics paper, read `AGENTS.md` and `SKILL.md`, then use the canonical protocol in `references/`.
 
+When scores, benchmarking, validation, or human-reviewer comparison are requested, load `references/scorecard.md` through the canonical protocol.
+
 Do not duplicate the protocol here. Keep review outputs evidence-grounded and mark missing evidence as provisional.
