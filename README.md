@@ -151,6 +151,21 @@ eval/
 
 The `eval/` folder contains a lightweight benchmark scaffold with toy cases only. It is not a Hugging Face dataset and does not contain copyrighted papers. See `EVALUATION.md` for the evaluation strategy and the boundary between pipeline tests and economics-validity tests.
 
+### Public Benchmark Snapshot
+
+We ran a blind full-text benchmark on 300 randomly sampled ICLR 2026 OpenReview submissions with public PDFs and human reviewer ratings. The skill completed 300/300 full-text reviews before hidden human labels were opened.
+
+Key results:
+
+- AI `acceptance_likelihood_score` vs mean human rating: Spearman `0.713`.
+- AI score vs individual human reviewer rating: Spearman `0.486`.
+- Single human reviewer vs other reviewers' mean: Spearman `0.394`.
+- 150/150 train-test linear scorecard: test Spearman `0.778`.
+
+These results are encouraging evidence that the scorecard contains meaningful peer-review signal. They are not evidence of professional economics referee validity, because the benchmark uses machine-learning conference papers rather than economics papers.
+
+See [`eval/stanford_agentic_reviewer_comparison_N300.md`](eval/stanford_agentic_reviewer_comparison_N300.md).
+
 For validation or benchmark tasks, ask:
 
 ```text

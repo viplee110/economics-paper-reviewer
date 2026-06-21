@@ -84,3 +84,24 @@ Do not claim:
 ## Current Repository Scope
 
 The committed `eval/` folder is intentionally lightweight. It is a scaffold for checking routing and review discipline, not a public benchmark dataset. A larger benchmark can be split into a separate repository or released on Hugging Face later if the cases are legally clean and the evaluation protocol is stable.
+
+## Public N=300 Cross-Domain Benchmark
+
+We include one public-safe benchmark report:
+
+```text
+eval/stanford_agentic_reviewer_comparison_N300.md
+```
+
+This report summarizes a blind full-text benchmark on 300 randomly sampled ICLR 2026 OpenReview submissions. It compares the skill's review-score correlations with the public Stanford Agentic Reviewer / PaperReview.ai headline metrics.
+
+The headline result is:
+
+```text
+AI score vs individual human reviewer Spearman: 0.486
+Single human reviewer vs other reviewers' mean Spearman: 0.394
+AI score vs mean human rating Spearman: 0.713
+150/150 calibrated scorecard test Spearman: 0.778
+```
+
+This benchmark is useful evidence that the reviewer protocol produces meaningful academic peer-review signal. It should not be described as economics-domain professional validity. The next milestone is a legally clean economics-specific benchmark.
