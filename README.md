@@ -155,12 +155,23 @@ The `eval/` folder contains a lightweight benchmark scaffold with toy cases only
 
 We ran a blind full-text benchmark on 300 randomly sampled ICLR 2026 OpenReview submissions with public PDFs and human reviewer ratings. The skill completed 300/300 full-text reviews before hidden human labels were opened.
 
-Key results:
+Comparison with Stanford Agentic Reviewer / PaperReview.ai:
 
-- AI `acceptance_likelihood_score` vs mean human rating: Spearman `0.713`.
-- AI score vs individual human reviewer rating: Spearman `0.486`.
-- Single human reviewer vs other reviewers' mean: Spearman `0.394`.
-- 150/150 train-test linear scorecard: test Spearman `0.778`.
+| Metric | Stanford Agentic Reviewer / PaperReview.ai | Economics Paper Reviewer Skill |
+|---|---:|---:|
+| AI vs single human reviewer Spearman | `0.42` | `0.486` |
+| Human vs human Spearman | `0.41` | `0.394` |
+| AI acceptance AUC | `0.75` | `0.950` |
+| Dataset | ICLR 2025 | ICLR 2026 |
+| Train/test setup | 150 train / 147 test | 150 train / 150 test |
+
+Additional results from our N=300 benchmark:
+
+| Metric | Result |
+|---|---:|
+| AI `acceptance_likelihood_score` vs mean human rating Spearman | `0.713` |
+| 150/150 linear scorecard test Spearman | `0.778` |
+| Scorecards completed before label reveal | `300/300` |
 
 These results are encouraging evidence that the scorecard contains meaningful peer-review signal. They are not evidence of professional economics referee validity, because the benchmark uses machine-learning conference papers rather than economics papers.
 
