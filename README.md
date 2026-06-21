@@ -159,6 +159,8 @@ Benchmark this reviewer on this economics paper.
 
 For Ng-style human-correlation tests, use the scorecard dimensions as calibration features. Keep raw skill performance and calibrated test-set performance separate.
 
+Main benchmarks should be full-text. Abstract-only or excerpt-only tests are pilots and should not be reported as Ng-style comparable results. See `eval/benchmark_protocol.md`.
+
 ## License
 
 MIT.

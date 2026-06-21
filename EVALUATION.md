@@ -51,13 +51,17 @@ Do not report performance on CS review datasets as evidence that this skill has 
 
 For comparison with agentic reviewer systems that train a simple calibration model, use a split-sample design:
 
-1. Produce blind reviews and scorecards for every paper before opening human labels.
-2. Split the benchmark into a training set and a held-out test set before fitting any calibrator.
-3. Train a simple model, such as linear regression, using the scorecard dimensions as features and human mean reviewer ratings as the target.
-4. Report raw skill performance and calibrated test-set performance separately.
-5. Do not tune prompts, score definitions, or model weights on the held-out test set.
+1. Use full paper text, not abstract-only or excerpt-only inputs.
+2. Produce blind reviews and scorecards for every paper before opening human labels.
+3. Validate the blind review file with `eval/scripts/validate_scorecards.py`.
+4. Split the benchmark into a training set and a held-out test set before fitting any calibrator.
+5. Train a simple model, such as linear regression, using the scorecard dimensions as features and human mean reviewer ratings as the target.
+6. Report raw skill performance and calibrated test-set performance separately.
+7. Do not tune prompts, score definitions, or model weights on the held-out test set.
 
 The committed scorecard dimensions live in `references/scorecard.md` so benchmark features stay stable across IDEs.
+
+See `eval/benchmark_protocol.md` for the full benchmark protocol.
 
 ## What Not To Claim
 
