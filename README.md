@@ -173,6 +173,10 @@ Additional results from our N=300 benchmark:
 | 150/150 linear scorecard test Spearman | `0.778` |
 | Scorecards completed before label reveal | `300/300` |
 
+Over-strictness check:
+
+In this N=300 benchmark, we do not observe a simple pattern of the reviewer being uniformly too harsh. Among accepted papers, the skill's acceptance-likelihood score has mean `6.65` and median `7.0`; only about `2%` of accepted papers score below `5`, and about `8.2%` score below `6`. Non-accepted papers have mean `4.37` and median `4.5`.
+
 These results are encouraging evidence that the scorecard contains meaningful peer-review signal. They are not evidence of professional economics referee validity, because the benchmark uses machine-learning conference papers rather than economics papers.
 
 See [`eval/stanford_agentic_reviewer_comparison_N300.md`](eval/stanford_agentic_reviewer_comparison_N300.md).

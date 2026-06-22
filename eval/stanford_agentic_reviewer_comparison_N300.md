@@ -223,6 +223,36 @@ Source: [Stanford Agentic Reviewer / PaperReview.ai Technical Overview](https://
 
 The skill is competitive with the public Stanford Agentic Reviewer headline metrics and is stronger on the closest available AI-vs-individual-human Spearman metric in this benchmark. The AUC comparison is less reliable because the datasets and label distributions differ.
 
+## Over-Strictness Diagnostic
+
+A useful reviewer should be critical, but not indiscriminately severe. We therefore ran a simple over-strictness diagnostic on the N=300 benchmark: if the skill were uniformly too harsh, we would expect many human-accepted papers to receive very low scores.
+
+Accepted papers:
+
+```text
+n: 49
+acceptance_likelihood_score mean: 6.647
+acceptance_likelihood_score median: 7.0
+minimum: 4.0
+maximum: 7.4
+share below 5: 2.0%
+share below 6: 8.2%
+```
+
+Non-accepted papers:
+
+```text
+n: 251
+acceptance_likelihood_score mean: 4.367
+acceptance_likelihood_score median: 4.5
+minimum: 1.5
+maximum: 6.8
+share below 5: 59.8%
+share below 6: 84.9%
+```
+
+This diagnostic does not show a simple pattern of uniform over-strictness. The skill did not systematically assign very low scores to papers that human reviewers accepted. That said, this does not prove that every criticism or revision suggestion is beneficial. False-fatal and over-conservative revision risks require a separate revision-impact benchmark.
+
 ## What This Benchmark Supports
 
 The benchmark supports these claims:
